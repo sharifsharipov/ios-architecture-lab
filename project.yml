@@ -1,0 +1,54 @@
+name: ExpenseProiOS
+options:
+  bundleIdPrefix: com.expensepro
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+
+packages:
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    from: "2.0.0"
+
+targets:
+  ExpenseProiOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: ExpenseProiOS
+    resources:
+      - path: ExpenseProiOS/Resources
+    dependencies:
+      - package: Supabase
+        product: Supabase
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.expensepro.ios
+        INFOPLIST_FILE: ExpenseProiOS/Resources/Info.plist
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    info:
+      path: ExpenseProiOS/Resources/Info.plist
+      properties:
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        CFBundleDisplayName: ExpensePro
+        CFBundleShortVersionString: "1.0.0"
+        CFBundleVersion: "1"
+        NSCameraUsageDescription: "Kamera xarajatlar uchun chek suratga olishga kerak"
+        NSLocationWhenInUseUsageDescription: "Joylashuv xarajatlar yoziladigan joyni aniqlash uchun kerak"
+        NSUserNotificationsUsageDescription: "Bildirishnomalar yuborish uchun"

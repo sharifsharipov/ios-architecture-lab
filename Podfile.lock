@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.11.2)
+  - KeychainAccess (4.2.2)
+  - Kingfisher (7.12.0)
+  - SwiftyBeaver (2.1.1)
+  - Swinject (2.9.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.9)
+  - KeychainAccess (~> 4.2)
+  - Kingfisher (~> 7.0)
+  - SwiftyBeaver (~> 2.0)
+  - Swinject (~> 2.8)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainAccess
+    - Kingfisher
+    - SwiftyBeaver
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 400275dd1c6d87d95a041861d2a59da4b520a203
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
+  SwiftyBeaver: ade157e4f857812e7d7f15f2e3396bb8733f8a1c
+  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
+
+PODFILE CHECKSUM: 14b6b014078da3df42682db8f80a8cb54950e655
+
+COCOAPODS: 1.16.2
